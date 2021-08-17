@@ -1,0 +1,21 @@
+header{
+    color: aliceblue;
+    background-color: black;
+}
+
+aside{
+    color: black;
+    background-color:#e77416;
+}
+
+
+
+.color1{
+    background-color: #2990f0;
+    color: black;
+}
+
+footer{
+    background-color: #2c29f0;
+    color:#fff;
+}

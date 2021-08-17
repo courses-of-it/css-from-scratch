@@ -1,0 +1,128 @@
+:root {
+	--fondoPrimario: #323941;
+	--fondoSecundario: #1A1E21;
+	--azulPrimario: #3860EC;
+	--azulSecundario: #414657;
+	--fondoTres: #303949;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.contenedor {
+	background: var(--fondoSecundario);
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.logo {
+	width: 100%;
+	margin: 50px 0;
+	display: flex;
+	justify-content: center;
+}
+
+svg {
+	width: 70%;
+}
+
+.dialogo  {
+	background: var(--fondoPrimario);
+	padding: 25px;
+	color: #fff;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	font-size: 18px;
+	line-height: 28px;
+
+	position: relative;
+}
+
+.dialogo2  {
+	background: var(--fondoPrimario);
+	padding: 25px;
+	color: #fff;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	font-size: 18px;
+	line-height: 28px;
+
+	position: relative;
+}
+.dialogo2::before{
+	padding-top: 5px;
+	content: '';
+	display: block;
+	position: absolute;
+	top: -40px;
+	border-top: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid var(--fondoPrimario);
+	right: calc(50% - 20px);
+
+}
+
+/* Pseudoelementos CSS */
+/*es para modificar el texto cuando esta selecionado*/
+/*normalmente solo se usan para poner adornos sin tener que usar js*/
+
+/*tambien hay otra propiedad llamada firt-line que nos permite selecionar la primera linea de texto de un elemento*/
+.dialogo::selection{
+	background: #f7873c;
+}
+
+/*esto agrega un triangulo after el dialogo*/
+.dialogo::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	border-top: 20px solid var(--fondoPrimario);
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	right: calc(50% - 20px);
+
+}
+
+
+.boton {
+	width: 100%;
+	background: var(--azulPrimario);
+	display: inline-block;
+	padding: 25px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: .3s ease all;
+}
+
+.boton:hover {
+	background: var(--azulSecundario);
+}
+
+.enlace {
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #D4D4D4;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.enlace:hover {
+	text-decoration: underline;
+}

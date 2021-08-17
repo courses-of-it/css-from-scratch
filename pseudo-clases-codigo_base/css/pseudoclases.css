@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+/*para cuando el enlace esta activo*/
+.enlace:active{
+	background-color: #000;
+	color: #fff;
+}
+/*para cuando no ha estado visitado*/
+.enlace:link{
+	color: blue;
+}
+/*para cuando a estado visitado*/
+.enlace:visited{
+	color: #b1b1b1;
+}
+
+/*para cuando pasas el cursor por encima*/
+.enlace:hover{
+	color:orangered;
+}
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+
+/*para aceder al primero elemento hijo*/
+.parrafos p:first-child{
+	background-color: #581526;
+	color: #fff;
+}
+/*para aceder al ultimo elemento hijo*/
+.parrafos p:last-child{
+	background-color: #000000;
+	color: #fff;
+}
+
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+
+/*accede al ultimo o primer elemento del tipo marcado*/
+.elementos div:last-of-type{
+	background-color: #581526;
+	color: #fff
+}
+
+/* ? --- --- --- --- LISTA --- --- --- --- */
+
+/*seleciona elementos de una lista*/
+
+/*puedes poner 
+numeros
+even = par
+odd = impar
+3n cada tantos elementos este caso 3*/
+.lista :nth-child(2){
+	background-color: #9e3852;
+	color: #fff;
+}
+
+/*empieza a contar desde abajo*/
+.lista :nth-last-child(3){
+	background-color: #9e3874;
+	color: #000;
+}
+
+
+/* ? --- --- --- --- LISTA 2 --- --- --- --- */
+
+
+/*accedo al parrafo  numero 3 de la lista*/
+/*si añades last empieza  contar desde abajo*/
+.lista2 p:nth-of-type(3){
+		background-color: #662020;
+		color: #ffffff;
+}
+
+
+/* ? --- --- --- --- LISTA 3 --- --- --- --- */
+
+/*se aplican solo ai este es el unico elemento en la lista*/
+.lista3 p:only-child{
+	background-color: #662020;
+	color: #ffffff;
+}
+
+/* ? --- --- --- --- LISTA 4 --- --- --- --- */
+
+/*aplica las cosas solo si es el unico tipo de elemento*/
+.lista4 p:only-of-type{
+	background-color: #662020;
+	color: #ffffff;
+}

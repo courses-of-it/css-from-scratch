@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuentes bootstrap i css propio-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" crossorigin="anonymous"></head>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nab fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">First website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#header">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#info1">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--header-->
+    <header id="header">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-content-left">
+                        <img src="img/image1.png" style="width: 100%">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-content-left">
+                        <h1 class="display-4">Lorem Ipmsum Dolor</h1>
+                        <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi repudiandae, qui exercitationem aliquam iusto doloremque harum ipsa laborum excepturi beatae architecto at adipisci. Ad quia quidem neque voluptatem natus praesentium!</p>
+                        <a href="" class=" mt-2 btn btn-outline-danger btn-lg">Read more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--testimonial-->
+
+    <section id="testimonial">
+        <div class="container">
+            <p class="mb-2 h2" >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt numquam nisi quia qui placeat atque expedita illum commodi magni quidem, sequi, voluptatem blanditiis! Quos dolorum impedit maiores, provident quod cum.
+            </p>
+            <cite>
+                <p class="h4">PEPE mama</p>
+            </cite> 
+                
+        </div>
+    </section>
+
+    <section class="info1" id="info1">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <img src="img/image2.png" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="info-right">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel illum dolorem sapiente molestias delectus ducimus possimus. Dolor deleniti eveniet ad dolorem maxime, natus qui aspernatur praesentium alias quam ipsam?</p>
+                        <a href="" class="btn btn-outline-danger">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info2" id="info2">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore tempore atque ut possimus ex esse itaque, ducimus deleniti nemo ab quam assumenda soluta accusamus. Libero nobis aliquid dignissimos architecto.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores omnis dolore deleniti repudiandae delectus exercitationem non temporibus magni sequi, ab et, fugiat impedit atque deserunt, maxime laborum ipsum assumenda. Possimus?</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="contact" class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 justify-content-center">
+                    <form class="card mt-5 my-5">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name:">
+                                <input type="email" class="form-control" placeholder="Email:">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="10" cols="30" class="form-control" placeholder="Message:"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-success btn-block">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration:2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.header-content-left', {
+            duration:2000,
+            origin: 'right',
+            distance: '300px'
+        });
+        sr.reveal('.header-content-right', {
+            duration:1500,
+            origin: 'top',
+            distance: '500px'
+        });
+        sr.reveal('#testimonial', {
+            duration:2000,
+            origin: 'left',
+            distance:'200px',
+            viewFactor: 0.2
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

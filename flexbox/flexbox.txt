@@ -1,0 +1,117 @@
+align content se utiliza para cuando tenemos varias filas
+recibe los mismos parametros que align items
+
+
+
+Display Flex
+
+Esta propiedad nos permite establecer cual sera el contenedor de los elementos a los que queremos dar un acomodo y/o distribución.
+
+CSS
+display: flex | inline-flex;
+1
+display: flex | inline-flex;
+Flex Direction
+
+Nos permite establecer la dirección en la que se acomodaran nuestros elementos.
+
+CSS
+flex-direction: row | column | row-reverse | column-reverse ;
+1
+flex-direction: row | column | row-reverse | column-reverse ;
+Flex Wrap
+
+Podemos indicar si todos los elementos estarán en linea con su máximo ancho posible o establecido o si queremos que respete el ancho y los elementos se posicionen en varias lineas de elementos.
+
+CSS
+flex-wrap: no-wrap | wrap | wrap-reverse;
+1
+flex-wrap: no-wrap | wrap | wrap-reverse;
+Flex Flow
+
+Es un atajo entre flex-direction y flex-wrap.
+
+CSS
+flex-flow:row wrap;
+/* Primer valor es el valor que le daríamos a flex-direction */
+/* Segundo valor es el valor que le daríamos a flex-wrap */
+1
+2
+3
+flex-flow:row wrap;
+/* Primer valor es el valor que le daríamos a flex-direction */
+/* Segundo valor es el valor que le daríamos a flex-wrap */
+Justify Content
+
+Nos permite decidir la posición de nuestros elementos y la distribución que tendran.
+
+CSS
+justify-content: flex-end | flex-start | center | space-around | space-between ;
+1
+justify-content: flex-end | flex-start | center | space-around | space-between ;
+Align Items
+
+Nos permite posicionar / distribuir elementos verticalmente. (solo para una linea de elementos)
+
+CSS
+align-items: flex-start | flex-end | center | stretch | baseline;
+1
+align-items: flex-start | flex-end | center | stretch | baseline;
+Align Content
+
+Nos permite posicionar / distribuir elementos verticalmente, igual que align-items, solo que align-content solo funciona para lineas de elementos, por ejemplo cuando tenemos establecido un flex-wrap:wrap; y los elementos se posicionan en varias lineas.
+
+CSS
+align-content: flex-start | flex-end | center | stretch | space-between | space-around ;
+1
+align-content: flex-start | flex-end | center | stretch | space-between | space-around ;
+ 
+
+Propiedades para los elementos hijos:
+Flex Basis
+
+Establecemos el tamaño que tendrá un elemento.
+
+CSS
+flex-basis:;
+1
+flex-basis:;
+Flex Grow
+
+Establecemos la proporción de crecimiento que tendrá un elemento a comparacion con los demás.
+
+CSS
+flex-grow:1;
+1
+flex-grow:1;
+Flex Shrink
+
+Establecemos la proporción de encogimiento que tendrá un elemento a comparacion con los demás.
+
+CSS
+flex-shrink:1;
+1
+flex-shrink:1;
+Flex
+
+Atajo entre flex-grow, flex-shrink, flex-basis
+
+CSS
+flex:1 1 50%;
+1
+flex:1 1 50%;
+Order
+
+Establecemos el orden que tendrá un elemento a comparacion con otros elementos.
+
+CSS
+order:;
+1
+order:;
+Align Self
+
+Nos permite alinear un elemento independientemente de los demás
+
+align-self: flex-start | flex-end | center | stretch | baseline ;
+1
+align-self: flex-start | flex-end | center | stretch | baseline ;
